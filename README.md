@@ -9,7 +9,7 @@ The arguments being passed down are Name and Value paired, so that they could be
 # _ota_deploy.bat_ Example Code Explanation 
 In this example, the script only recognizes and parses an argument named "arg1", and will generate a file contains the paired _**Value**_ being put in the blank.
 
-<img width="250" alt="image" src="https://github.com/user-attachments/assets/2e96fec0-c2ae-47f3-a607-c68d9efbfd8c">
+<img width="200" alt="image" src="https://github.com/user-attachments/assets/2e96fec0-c2ae-47f3-a607-c68d9efbfd8c">
 
 # Generate and Verify OTA Artifact Using Allxon CLI 
 Since you are supposed to verify the OTA activity before doing mass deployment, the artifact generation and related testifying operations shown in below need to be done on your at least one **edge device** firstly. 
