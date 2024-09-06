@@ -18,9 +18,9 @@ Since you are supposed to verify the OTA activity before doing mass deployment, 
 2. Edit `ota_deploy.bat` to suit your needs. (e.g. calling an executable file to execute an action or run an application update).
 3. Run PowerShell as administrator and navigate to the directory where allxon-cli tool is placed. `$cd 'C:\Program Files\allxon-cli\bin\'`
 4. Run `$.\allxon-cli ota make –d {path of the folder contains ota_deploy.bat}` to generate an OTA artifact.
-5. **Run `$.\allxon-cli ota test -f {file name of the artifact} --args arg1 "Hello World"`** to test the Allxon OTA artifact you just generated. This action will simulate OTA deployment by asking the Allxon Agent to execute `ota_deploy.bat`, so please do mind that all the commands in the script are going to be executed on the edge. 
-More details: https://github.com/allxon/allxon-cli/blob/master/ota.md#test-
-6. Verify if the deployment operation is executed as expected as specified in `ota_deploy.bat`. And in this example, it should generate an _allxonOTA_ file with_ Hello World_ string inside, on the user's Desktop.
+5. **Run `$.\allxon-cli ota test -f {file name of the artifact} --args arg1 "Hello World"`** to test the Allxon OTA artifact you just generated. This action will simulate OTA deployment by asking the Allxon Agent to execute `ota_deploy.bat`, so please do mind that all the commands in the script are going to be executed on the edge.
+   More details: https://github.com/allxon/allxon-cli/blob/master/ota.md#test-
+7. Verify if the deployment operation is executed as expected as specified in `ota_deploy.bat`. And in this example, it should generate an _allxonOTA_ file with_ Hello World_ string inside, on the user's Desktop.
 
 > [!NOTE]
 > The OTA artifact is architecture-sensitive for execution, and by default, the artiface owns the same architecture of the platform who generates it. (e.g. `x86_64` or `aarch64`).
